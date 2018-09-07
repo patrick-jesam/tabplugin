@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Custom Tab Plugin Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+    <body>
+        <div class="container">
+            <h2>CUSTOM TAB PLUGIN DEMO</h2>
+
+            <section class="tab-container">
+                <ul class="tabs" role="tablist">
+                    <li>
+                        <input type="radio" name="tabs" id="tab1" checked />
+
+                        <label role="tab" for="tab1" class="item-pane tx-grey bd-grey c-trans"
+                            aria-selected="true" 
+                            aria-controls="panel1" 
+                            tabindex="0">
+                                <span>1</span>
+                        </label>
+
+                        <div id="tab-content1" 
+                            class="tab-content"
+                            role="tabpanel" 
+                            aria-labelledby="specification" 
+                            aria-hidden="true">
+                                <h1>This is content 1</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab2" />
+
+                        <label role="tab" for="tab2" class="item-pane tx-grey bd-grey c-trans"
+                            aria-selected="true" 
+                            aria-controls="panel1" 
+                            tabindex="0">
+                                <span>2</span>
+                        </label>
+
+                        <div id="tab-content2" 
+                            class="tab-content"
+                            role="tabpanel" 
+                            aria-labelledby="specification" 
+                            aria-hidden="true">
+                                <h1>This is content 2</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab3" />
+
+                        <label role="tab" for="tab3" class="item-pane tx-grey bd-grey c-trans"
+                            aria-selected="true" 
+                            aria-controls="panel1" 
+                            tabindex="0">
+                                <span>3</span>
+                        </label>
+
+                        <div id="tab-content3" 
+                            class="tab-content"
+                            role="tabpanel" 
+                            aria-labelledby="specification" 
+                            aria-hidden="true">
+                                <h1>This is content 3</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab4" />
+
+                        <label role="tab" for="tab4" class="item-pane tx-grey bd-grey c-trans"
+                            aria-selected="true" 
+                            aria-controls="panel1" 
+                            tabindex="0">
+                                <span>4</span>
+                        </label>
+
+                        <div id="tab-content4" 
+                            class="tab-content"
+                            role="tabpanel" 
+                            aria-labelledby="specification" 
+                            aria-hidden="true">
+                                <h1>This is content 4</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab5" />
+
+                        <label role="tab" for="tab5" class="item-pane tx-grey bd-grey c-trans"
+                            aria-selected="true" 
+                            aria-controls="panel1" 
+                            tabindex="0">
+                                <span>5</span>
+                        </label>
+
+                        <div id="tab-content5" 
+                            class="tab-content"
+                            role="tabpanel" 
+                            aria-labelledby="specification" 
+                            aria-hidden="true">
+                                <h1>This is content 5</h1>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

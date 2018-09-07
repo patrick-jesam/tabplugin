@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/*demo styles*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    background-color: #f2f2f2;
+}
+.container{
+    max-width: 600px;
+    margin: 0px auto;
+}
+.container h2{
+    margin: 50px auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*basic styles*/
+.bg-blue{
+    background-color: #2FAAD6;
+}
+.bd-blue{
+    border: 1px solid #2FAAD6;
+}
+.bd-grey{
+    border: 1px solid #cfcece;
+}
+.tx-white{
+    color: #FFFFFF;
+}
+.tx-grey{
+    color: #cfcece;
+}
+
+
+/*tab styles*/
+.tab-container{
+    position: relative;
+}
+.tabs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+}
+.tabs li label{
+    padding: 2px;
+}
+.tabs li:first-child .item-pane::before{
+    /* display: none; */
+    content: "";
+}
+.tabs li input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.tabs [id^="tab"]:checked + label span{
+    top: 0;
+    background-color: #2FAAD6;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.tabs [id^="tab"]:checked ~ .bd-grey{
+    border-color: #2FAAD6;
+}
+.tabs [id^="tab"]:checked + label::before {
+    background-color: #2FAAD6 !important;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+}
+.tabs .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.item-pane::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: #E5E5E5;
+    width: 70px;
+    right: 100%;
+    top: calc(50% - 2px);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.item-pane {
+    width: 38px;
+    height: 38px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+}
+.item-pane span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.c-trans{
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
